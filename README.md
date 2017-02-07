@@ -1,20 +1,21 @@
 #Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+TaBot is a pernonnel assistant using Microsoft bot framework, Microsoft Azure services and Microsoft Win 10 IoT core device. Please see Arch.docx for the architecture of the system.
 
-#Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+##Repository contents
+### [AlarmMonitor](https://github.com/xiangyan99/TaBot/tree/master/AlarmMonitor)
+A standalone windows desktop application monitors Azure event hub in real time.
 
-#Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+###[GpioOneWire](https://github.com/xiangyan99/TaBot/tree/master/IoT/GpioOneWire)
+A WinRT component implemented in VC which is used to get temperature on IoT device.
 
-#Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+###[TaBot](https://github.com/xiangyan99/TaBot/tree/master/TABot)
+The bot code implemented with Microsoft Bot Framework.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+###[TaApis](https://github.com/xiangyan99/TaBot/tree/master/TaApis)
+The backend apis which implements the function of set alarm, forword command, query temperature, etc.
+
+###[TaClient](https://github.com/xiangyan99/TaBot/tree/master/TaClient)
+A UWP app which uses speech to text APIs to interpret voice into text and communicate with the bot.
+
+###[tauwp](https://github.com/xiangyan99/TaBot/tree/master/tauwp)
+A UWP app running on Win 10 IoT core to collect temperature from IoT device and send the data to IoT hub.
