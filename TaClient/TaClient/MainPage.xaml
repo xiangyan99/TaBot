@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="TaClient.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TaClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBox x:Name="Output" Text="" Margin="10" IsReadOnly="True"
+                     AcceptsReturn="True" TextWrapping="Wrap" 
+                     VerticalAlignment="Stretch"
+                     ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom">
+            <Button x:Name="ClickMe" Content="Click to Talk"  HorizontalAlignment="Center" Click="ClickMe_Click" VerticalContentAlignment="Bottom"/>
+        </StackPanel>
+    </Grid>
+</Page>
